@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DieCast Garage | Kullanım Şartları / Terms of Service</title>
+  <meta name="description" content="DieCast Garage mobil uygulamasının Kullanım Şartları (Terms of Service).">
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #0f172a; /* slate-900 */
+      --muted:#475569; /* slate-600 */
+      --card:#f8fafc; /* slate-50 */
+      --border:#e2e8f0; /* slate-200 */
+      --accent:#f97316; /* orange-500 */
+      --accent-fg:#ffffff;
+      --code:#0b1020;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1020;
+        --fg:#e5e7eb;
+        --muted:#94a3b8;
+        --card:#0f162e;
+        --border:#1f2a44;
+        --accent:#fb923c;
+        --accent-fg:#1b233a;
+        --code:#e5e7eb;
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.65;
+    }
+    .container{ max-width: 960px; margin: 0 auto; padding: 24px; }
+    header{ position:sticky; top:0; z-index:10; background: color-mix(in oklab, var(--bg) 92%, transparent); backdrop-filter: blur(8px); border-bottom:1px solid var(--border); }
+    .header-inner{ max-width:960px; margin:0 auto; padding:12px 24px; display:flex; gap:12px; align-items:center; justify-content:space-between; }
+    .brand{font-weight:700; letter-spacing:.2px}
+    .tag{font-size:.9rem; color:var(--muted)}
+    .lang-switch{ display:flex; gap:8px; background: var(--card); padding:6px; border-radius:999px; border:1px solid var(--border); }
+    .lang-switch button{ border:0; background:transparent; padding:8px 12px; border-radius:999px; cursor:pointer; color:var(--muted); font-weight:600; }
+    .lang-switch button.active{ background:var(--accent); color:var(--accent-fg); }
+    h1{font-size:1.8rem; margin:.6em 0 .2em}
+    h2{font-size:1.35rem; margin:1.6em 0 .4em}
+    h3{font-size:1.1rem; margin:1.2em 0 .3em}
+    p{margin:.6em 0}
+    ul{padding-left:1.2rem}
+    .card{ background:var(--card); border:1px solid var(--border); padding:16px; border-radius:16px; }
+    .meta{color:var(--muted); font-size:.95rem}
+    .notice{ border-left:4px solid var(--accent); padding:12px 14px; background: color-mix(in oklab, var(--card) 85%, transparent); border-radius:8px; margin:1rem 0; }
+    .toc{ display:flex; flex-wrap:wrap; gap:8px; margin:.6rem 0 1.2rem }
+    .toc a{ text-decoration:none; color:var(--fg); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:.92rem; background:var(--card) }
+    a{ color:var(--accent); }
+    code{background: color-mix(in oklab, var(--card) 80%, transparent); padding:.1rem .35rem; border-radius:6px; color:var(--code)}
+    footer{ margin:3rem 0 1rem; color:var(--muted); font-size:.9rem }
+    .hidden{ display:none !important; }
+    @media print{
+      header, .toc, .lang-switch{ display:none !important; }
+      body{ background:#fff; color:#000 }
+      a{text-decoration:underline; color:#000}
+      .card, .notice{ border-color:#ccc; background:#fff }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div>
+      <div class="brand">DieCast Garage</div>
+      <div class="tag">Kullanım Şartları / Terms of Service</div>
+    </div>
+    <div class="lang-switch" role="tablist" aria-label="Dil seçimi / Language">
+      <button id="btn-tr" class="active" role="tab" aria-selected="true" aria-controls="terms-tr">TR</button>
+      <button id="btn-en" role="tab" aria-selected="false" aria-controls="terms-en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Türkçe -->
+  <article id="terms-tr" lang="tr">
+    <h1>Kullanım Şartları</h1>
+    <p class="meta">Son güncelleme: <strong>2025-09-15</strong></p>
+
+    <div class="toc">
+      <a href="#tr-giris">Giriş ve Kabul</a>
+      <a href="#tr-hizmet">Hizmet Tanımı</a>
+      <a href="#tr-hesap">Hesap ve Kullanıcı Yükümlülükleri</a>
+      <a href="#tr-kurallar">Kullanım Kuralları / Yasaklar</a>
+      <a href="#tr-ucret">Ücretlendirme ve Abonelikler</a>
+      <a href="#tr-ugc">Kullanıcı İçerikleri ve Lisans</a>
+      <a href="#tr-fikri">Fikri Mülkiyet</a>
+      <a href="#tr-sorumluluk">Sorumluluk Reddi</a>
+      <a href="#tr-degisiklik">Hizmet Değişikliği ve Sonlandırma</a>
+      <a href="#tr-hukuk">Geçerli Hukuk ve Uyuşmazlık</a>
+      <a href="#tr-iletisim">İletişim</a>
+      <a href="#tr-diger">Diğer Hükümler</a>
+    </div>
+
+    <section id="tr-giris" class="card">
+      <h2>Giriş ve Kabul</h2>
+      <p>DieCast Garage mobil uygulamasını (“Uygulama”) kullanarak bu Kullanım Şartlarını kabul etmiş sayılırsınız. Bu şartlar, <strong>HegionSoft</strong> tarafından sunulan hizmetlerin kullanımı için geçerlidir. Bu şartları kabul etmiyorsanız Uygulamayı kullanmayınız.</p>
+      <p><strong>İletişim:</strong> <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+    </section>
+
+    <section id="tr-hizmet">
+      <h2>Hizmet Tanımı</h2>
+      <p>Uygulama; die-cast/koleksiyon araçlarınızı yönetmenize, topluluk forumunda paylaşım yapmanıza, takas ilanları oluşturmanıza ve AI destekli araç ekleme/raporlama gibi özelliklere erişmenize imkân sağlar. Özelliklerin bazıları tüm kullanıcılara açık, bazıları ise Premium abonelik gerektirebilir.</p>
+    </section>
+
+    <section id="tr-hesap">
+      <h2>Hesap ve Kullanıcı Yükümlülükleri</h2>
+      <ul>
+        <li>Hesap oluşturmak için doğru ve güncel bilgiler vermeyi, hesabınızın güvenliğini (şifre gizliliği) sağlamayı kabul edersiniz.</li>
+        <li>Hesap, sizin adınıza yalnızca sizin tarafınızdan veya yetkilendirdiğiniz kişilerce kullanılmalıdır.</li>
+        <li>13 yaşından küçükler için Uygulama uygun değildir; ikamet ettiğiniz ülkenin asgari yaş sınırına (AB/AEA’da genellikle 16) uymalısınız.</li>
+      </ul>
+    </section>
+
+    <section id="tr-kurallar">
+      <h2>Kullanım Kuralları / Yasaklar</h2>
+      <p>Uygulamayı aşağıdakiler dâhil ancak bunlarla sınırlı olmamak üzere kötüye kullanamazsınız:</p>
+      <ul>
+        <li>Yasa dışı faaliyet, dolandırıcılık, kimlik hırsızlığı, sahte veya yanıltıcı içerik</li>
+        <li>Telif hakkı/marka ihlali; korsan içerik paylaşımı</li>
+        <li>Nefret söylemi, tehdit, taciz, müstehcen veya rahatsız edici içerik</li>
+        <li>Spam, otomatik mesaj/bot, manipülasyon</li>
+        <li>Kötü amaçlı yazılım, güvenlik açıklarından yararlanma, tersine mühendislik</li>
+        <li>İzinsiz veri toplama (scraping), kişisel verilerin ifşası (doxing)</li>
+        <li>İhlale yönelik ürünlerin/servislerin reklamı veya satışı</li>
+      </ul>
+      <p>İhlaller halinde içeriklerinizi kaldırabilir, hesabınızı askıya alabilir veya sonlandırabiliriz.</p>
+    </section>
+
+    <section id="tr-ucret">
+      <h2>Ücretlendirme ve Abonelikler</h2>
+      <ul>
+        <li>Premium abonelik <strong>RevenueCat</strong> altyapısı üzerinden aylık ve yıllık planlarla sunulur. Fiyatlar ülke/bölgeye göre değişebilir.</li>
+        <li>Abonelikler, platform kurallarına göre otomatik yenilenir; iptal işlemleri cihazınızdaki App Store / Google Play abonelik ayarlarından yapılır.</li>
+        <li>Deneme süresi, indirimler ve kampanyalar dönemsel olarak değişebilir.</li>
+        <li>Ödemeler, vergiler ve iadeler ilgili platformun (Apple App Store / Google Play) şartlarına tabidir.</li>
+        <li>Plan/fiyat değişikliklerini yürürlük tarihinden önce makul bir bildirimle duyururuz.</li>
+      </ul>
+    </section>
+
+    <section id="tr-ugc" class="card">
+      <h2>Kullanıcı İçerikleri ve Lisans</h2>
+      <p>Uygulamaya yüklediğiniz tüm içerikler (fotoğraflar, yazılar, koleksiyon bilgileriniz vb.) üzerindeki haklar sizde kalır. Ancak Uygulamanın çalışması ve hizmetlerin sunulması için bize, bu içerikleri <strong>dünya çapında, münhasır olmayan, devredilebilir olmayan, alt lisanslanamaz, geri alınabilir ve <em>ücretsiz</em></strong> bir lisans ile <strong>barındırma, saklama, çoğaltma, teknik olarak işleme, gösterme ve dağıtma</strong> hakkını verirsiniz. Bu lisans, içeriğinizi yalnızca Uygulamanın işlevlerini yerine getirmek amacıyla kullanmamıza izin verir.</p>
+      <p>İçeriklerinizin hukuka uygun olmasından siz sorumlusunuz. Telif hakkı size ait olmayan veya paylaşma izniniz bulunmayan içerikleri yüklememelisiniz. Bildirim üzerine veya kendi takdirimizle koşullara aykırı içerikleri kaldırabiliriz.</p>
+    </section>
+
+    <section id="tr-fikri">
+      <h2>Fikri Mülkiyet</h2>
+      <p>Uygulamadaki yazılım, tasarım, marka ve tüm diğer unsurlar HegionSoft’a veya lisans verenlerine aittir. Bu unsurlar üzerinde size yalnızca kişisel ve ticari olmayan kullanım için sınırlı bir lisans tanınır; tersine mühendislik, kopyalama, dağıtım veya türev eser oluşturma yasaktır.</p>
+    </section>
+
+    <p><strong>Takas ve kullanıcı işlemleri:</strong> Uygulama yalnızca kullanıcıların birbirleriyle iletişim kurmasını sağlayan bir platformdur. Takas veya kullanıcılar arası herhangi bir işlemde taraf değiliz. Her türlü anlaşmazlık, alım-satım, takas veya uyuşmazlık tamamen kullanıcıların kendi sorumluluğundadır. HegionSoft bu süreçlerde herhangi bir garanti, sorumluluk veya yükümlülük üstlenmez.</p>
+
+
+    <section id="tr-sorumluluk">
+      <h2>Sorumluluk Reddi</h2>
+      <p>Uygulama “olduğu gibi” ve “mevcut hâliyle” sunulur; kesintisiz, hatasız veya belirli bir amaca uygun olduğu garanti edilmez. Toplulukta paylaşılan içerikler kullanıcıların sorumluluğundadır. Yürürlükteki hukuk izin verdiği ölçüde dolaylı/sonuçsal zararlar için sorumluluk kabul etmeyiz.</p>
+    </section>
+
+    <section id="tr-degisiklik">
+      <h2>Hizmet Değişikliği ve Sonlandırma</h2>
+      <p>Özellikleri değiştirebilir, ekleyebilir veya kaldırabiliriz. Kurallara aykırı kullanımda veya güvenlik/risk durumlarında erişiminizi askıya alabilir ya da sonlandırabiliriz. Şartları güncelleyebilir; önemli değişikliklerde Uygulama içi bildirim yaparız.</p>
+    </section>
+
+    <section id="tr-hukuk" class="card">
+      <h2>Geçerli Hukuk ve Uyuşmazlık</h2>
+      <p>Bu şartlar Türkiye Cumhuriyeti hukukuna tabidir. Uyuşmazlıklarda münhasır yargı yeri İstanbul (Türkiye) mahkemeleri ve icra daireleridir.</p>
+    </section>
+
+    <section id="tr-iletisim">
+      <h2>İletişim</h2>
+      <p>Sorularınız için: <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+    </section>
+
+    <section id="tr-diger" class="notice">
+      <h3>Diğer Hükümler</h3>
+      <ul>
+        <li>Hükümlerin herhangi biri geçersiz sayılırsa, geri kalan hükümler yürürlükte kalır.</li>
+        <li>Haklarımızı kullanmamamız veya geciktirmemiz feragat sayılmaz.</li>
+        <li>Gizlilik için <a href="./index.html">Gizlilik Politikası</a> metnine bakınız.</li>
+      </ul>
+    </section>
+  </article>
+
+  <!-- English -->
+  <article id="terms-en" lang="en" class="hidden" aria-hidden="true">
+    <h1>Terms of Service</h1>
+    <p class="meta">Last updated: <strong>2025-09-15</strong></p>
+
+    <div class="toc">
+      <a href="#en-intro">Introduction & Acceptance</a>
+      <a href="#en-service">Service Description</a>
+      <a href="#en-accounts">Accounts & Responsibilities</a>
+      <a href="#en-acceptable">Acceptable Use / Prohibited Conduct</a>
+      <a href="#en-fees">Fees & Subscriptions</a>
+      <a href="#en-ugc">User Content & License</a>
+      <a href="#en-ip">Intellectual Property</a>
+      <a href="#en-disclaimer">Disclaimer</a>
+      <a href="#en-changes">Changes & Termination</a>
+      <a href="#en-law">Governing Law & Disputes</a>
+      <a href="#en-contact">Contact</a>
+      <a href="#en-misc">Miscellaneous</a>
+    </div>
+
+    <section id="en-intro" class="card">
+      <h2>Introduction & Acceptance</h2>
+      <p>By using the DieCast Garage mobile app (“App”), you agree to these Terms of Service. The App is provided by <strong>HegionSoft</strong>. If you do not agree, do not use the App.</p>
+      <p><strong>Contact:</strong> <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+    </section>
+
+    <section id="en-service">
+      <h2>Service Description</h2>
+      <p>The App helps you manage die-cast/collectible cars, participate in a community forum, post trade listings, and access AI-assisted features for adding items and generating reports. Some features may be available to all users, while others may require a Premium subscription.</p>
+    </section>
+
+    <section id="en-accounts">
+      <h2>Accounts & Responsibilities</h2>
+      <ul>
+        <li>Provide accurate, up-to-date information and keep your credentials secure.</li>
+        <li>Your account is personal; do not share access without authorization.</li>
+        <li>You must meet the minimum age in your country (not for children under 13; typically 16+ in the EU/EEA).</li>
+      </ul>
+    </section>
+
+    <section id="en-acceptable">
+      <h2>Acceptable Use / Prohibited Conduct</h2>
+      <p>You may not use the App to, including without limitation:</p>
+      <ul>
+        <li>engage in unlawful activity, fraud, identity theft, or deceptive content</li>
+        <li>infringe copyrights/trademarks; share pirated materials</li>
+        <li>post hate speech, threats, harassment, obscene or disturbing content</li>
+        <li>spam, automated/bot messaging, manipulation</li>
+        <li>distribute malware, exploit security issues, reverse engineer</li>
+        <li>scrape or harvest data; disclose personal data without consent</li>
+        <li>advertise/sell infringing or unsafe goods/services</li>
+      </ul>
+      <p>We may remove content, suspend or terminate access for violations.</p>
+    </section>
+
+    <section id="en-fees">
+      <h2>Fees & Subscriptions</h2>
+      <ul>
+        <li>Premium is offered via <strong>RevenueCat</strong> with monthly and yearly plans. Prices vary by region.</li>
+        <li>Subscriptions auto-renew per platform rules; cancel via your device’s App Store / Google Play settings.</li>
+        <li>Trials, discounts and promotions may change from time to time.</li>
+        <li>Payments, taxes and refunds follow Apple App Store / Google Play policies.</li>
+        <li>We’ll notify you of material plan/price changes before they take effect.</li>
+      </ul>
+    </section>
+
+    <section id="en-ugc" class="card">
+      <h2>User Content & License</h2>
+      <p>You retain ownership of content you upload (photos, text, collection data, etc.). To operate the App, you grant us a <strong>worldwide, non-exclusive, non-transferable, non-sublicensable, revocable, royalty-free</strong> license to <strong>host, store, reproduce, technically process, display and distribute</strong> such content solely to provide App functionality.</p>
+      <p>You are responsible for the legality of your content. Do not upload materials you do not own or have rights to. We may remove content that violates these Terms or the law.</p>
+    </section>
+
+    <section id="en-ip">
+      <h2>Intellectual Property</h2>
+      <p>The software, design, trademarks and all other elements of the App belong to HegionSoft or its licensors. You are granted a limited license for personal, non-commercial use; reverse engineering, copying, distribution or derivative works are prohibited.</p>
+    </section>
+
+    <section id="en-disclaimer">
+      <h2>Disclaimer</h2>
+      <p>The App is provided “as is” and “as available,” without warranties of uninterrupted or error-free operation or fitness for a particular purpose. Community content is the responsibility of users. To the extent permitted by law, we disclaim liability for indirect or consequential damages.</p>
+    </section>
+
+    <p><strong>Trades and user transactions:</strong> The App acts only as a platform enabling users to interact with each other. We are not a party to any trade, exchange, or transaction between users. All disputes, agreements, or issues arising from such interactions are solely the responsibility of the users involved. HegionSoft assumes no liability, warranty, or obligation in these matters.</p>
+
+
+    <section id="en-changes">
+      <h2>Changes & Termination</h2>
+      <p>We may modify features, add or remove functionality. We may suspend or terminate access for rule violations or security/risk reasons. We may update these Terms; material changes will be notified in-app.</p>
+    </section>
+
+    <section id="en-law" class="card">
+      <h2>Governing Law & Disputes</h2>
+      <p>These Terms are governed by the laws of the Republic of Turkey. Courts of Istanbul, Turkey, shall have exclusive jurisdiction over disputes.</p>
+    </section>
+
+    <section id="en-contact">
+      <h2>Contact</h2>
+      <p>Questions: <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+    </section>
+
+    <section id="en-misc" class="notice">
+      <h3>Miscellaneous</h3>
+      <ul>
+        <li>If any provision is deemed unenforceable, the remaining provisions remain in effect.</li>
+        <li>No waiver is implied by any delay or omission in exercising rights.</li>
+        <li>See also our <a href="./index.html">Privacy Policy</a>.</li>
+      </ul>
+    </section>
+  </article>
+
+  <footer>
+    © <span id="year"></span> DieCast Garage — Bu sayfa bilgilendirme amaçlıdır.
+  </footer>
+</main>
+
+<script>
+  (function(){
+    const btnTR = document.getElementById('btn-tr');
+    const btnEN = document.getElementById('btn-en');
+    const tr = document.getElementById('terms-tr');
+    const en = document.getElementById('terms-en');
+
+    function setLang(lang){
+      const isTR = lang === 'tr';
+      tr.classList.toggle('hidden', !isTR);
+      tr.setAttribute('aria-hidden', String(!isTR));
+      en.classList.toggle('hidden', isTR);
+      en.setAttribute('aria-hidden', String(isTR));
+      btnTR.classList.toggle('active', isTR);
+      btnTR.setAttribute('aria-selected', String(isTR));
+      btnEN.classList.toggle('active', !isTR);
+      btnEN.setAttribute('aria-selected', String(!isTR));
+      document.documentElement.lang = isTR ? 'tr' : 'en';
+      try{ localStorage.setItem('terms_lang', lang); }catch(e){}
+    }
+
+    btnTR.addEventListener('click', () => setLang('tr'));
+    btnEN.addEventListener('click', () => setLang('en'));
+
+    // restore pref
+    let pref = 'tr';
+    try{ pref = localStorage.getItem('terms_lang') || 'tr'; }catch(e){}
+    setLang(pref);
+
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
